@@ -36,9 +36,9 @@ Log in using your GitHub account.
 Click "Generate HMAC_SHA256 Key".
 
 Copy the generated API Key and Secret Key.
-Go to TRADING_BOT/.env File and add
-BINANCE_API_KEY=your_testnet_api_key_here
-BINANCE_API_SECRET=your_testnet_api_secret_here
+Go to TRADING_BOT/create.env File and env
+API_KEY=your_testnet_api_key_here
+API_SECRET=your_testnet_api_secret_here
 
 ##USAGE##
 Run the main CLI script to launch the interactive prompt:
@@ -47,5 +47,5 @@ Example Execution
 ? Enter trading symbol: ETHUSDT
 ? BUY or SELL?: BUY
 ? MARKET or LIMIT?: LIMIT
-? Enter quantity to trade: 0.01
+? Enter quantity to trade:LIMIT
 ? Enter the LIMIT price: 2500
