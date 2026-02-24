@@ -41,7 +41,7 @@ def trade():
         price = price_validation(price=price)
         place_limit_order(client=client,symbol=symbol,quantity=quantity,price=price,type=type,side=side)
     else:
-        place_market_order(client=client,symbol=symbol,quantity=quantity,type=type,side=side)
+        place_market_order(client=client,symbol=symbol,quantity=quantity,price=price,type=type,side=side)
 
 if __name__ =='__main__':
     app()

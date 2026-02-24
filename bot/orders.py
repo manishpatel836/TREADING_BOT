@@ -21,11 +21,11 @@ def place_market_order(client,symbol:str,side:str,type:str,quantity:float):
 
     except (BinanceAPIException or BinanceOrderException) as e:
         logging.error(f'Order failed {e}')
-        print(f'{e.message}')
+        print(f'{e}')
     
     except Exception as e:
         logging.error(f'order failed {e}')
-        print(f'{e.message}')
+        print(f'{e}')
 
 def place_limit_order(client,symbol:str,side:str,type:str,quantity:float,price:float):
     try:
@@ -47,8 +47,8 @@ def place_limit_order(client,symbol:str,side:str,type:str,quantity:float,price:f
 
     except (BinanceAPIException or BinanceOrderException) as e:
         logging.error(f'Order failed {e}')
-        print(f'{e.message}')
+        print(f'{e}')
     
     except Exception as e:
         logging.error(f'order failed {e}')
-        print(f'{e.message}')
+        print(f'{e}')
